@@ -1,6 +1,6 @@
-![version](https://img.shields.io/pypi/v/discord-pretty-help) ![python](https://img.shields.io/badge/python-3.6+-blue)
 
 # discord-pretty-help
+## Revised by prakarsh17
 
 An embed version of the built in help command for discord.py and probably other forks of discord.py ie Nextcord, Novus, pycord, etc.
 
