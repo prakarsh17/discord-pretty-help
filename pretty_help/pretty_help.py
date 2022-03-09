@@ -301,7 +301,7 @@ class PrettyHelp(HelpCommand):
         """Returns help command's ending note. This is mainly useful to override for i18n purposes."""
         note = self.ending_note or (
             "Send {help.clean_prefix}{help.invoked_with} [command] for more info on a command.\n"
-            "You can also type {help.clean_prefix}{help.invoked_with} [category_name] for more info on a category."
+            "You can also type {help.clean_prefix}{help.invoked_with} [category_name] for more info on a category.\n ⇸[tessa-pretty-help]"
         )
         return note.format(ctx=self.context, help=self)
 
