@@ -50,7 +50,7 @@ class DefaultMenu(PrettyMenu):
 
     def __init__(
         self,
-        page_left="◀",
+        page_left="",
         page_right="▶",
         remove="❌",
         active_time=30,

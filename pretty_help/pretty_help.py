@@ -127,7 +127,7 @@ class Paginator:
 
             embed.add_field(
                 name=command.name,
-                value=f'{self.prefix}{command.short_doc or "No Description"}{self.suffix}',
+                value=f'{self.prefix}{command.short_doc or command.name}{self.suffix}',
                 inline=False,
             )
         self._add_page(embed)
@@ -160,18 +160,18 @@ class Paginator:
             aliases = ", ".join(command.aliases)
             page.add_field(
                 name="Aliases",
-                value=f"{self.prefix}{aliases}{self.suffix}",
+                value=f"`{aliases}`",
                 inline=False,
             )
         cooldown: commands.Cooldown = command._buckets._cooldown
         if cooldown:
             page.add_field(
                 name="Cooldown",
-                value=f"`{cooldown.rate} time(s) every {cooldown.per} second(s)`",
+                value=f"`⏳{cooldown.rate} time(s) every {cooldown.per} second(s)`",
             )
 
         page.add_field(
-            name="Usage", value=f"{self.prefix}{signature}{self.suffix}", inline=False
+            name="Usage ▶", value=f"{self.prefix}{signature}{self.suffix}", inline=False
         )
         self._add_page(page)
 
@@ -223,7 +223,7 @@ class Paginator:
         for page_no, page in enumerate(self._pages, start):
             page: discord.Embed
             if not self.show_index or page_no != 0:
-                page.description = f"`Page: {page_no}/{pages}`\n{page.description}"
+                page.description = f"📖`Page: {page_no}/{pages}`\n{page.description}"
             lst.append(page)
         return lst
 
@@ -300,8 +300,8 @@ class PrettyHelp(HelpCommand):
     def get_ending_note(self):
         """Returns help command's ending note. This is mainly useful to override for i18n purposes."""
         note = self.ending_note or (
-            "Type {help.clean_prefix}{help.invoked_with} command for more info on a command.\n"
-            "You can also type {help.clean_prefix}{help.invoked_with} category for more info on a category."
+            "Send {help.clean_prefix}{help.invoked_with} [command] for more info on a command.\n"
+            "You can also type {help.clean_prefix}{help.invoked_with} [category_name] for more info on a category."
         )
         return note.format(ctx=self.context, help=self)
 
