@@ -67,10 +67,8 @@ the arrow embeds. The message is unresponsive after 30s of no activity, it'll re
 
 # Changelog
 
-## [1.3.3]
-- Added `delete_after_timeout` kwarg so messages are deleted after the time limit instead of just removing emojis
-- Added command cooldown information to pages
-
+[0.0.1.2]
+- Name updates and some stuff
 
 
 # Notes:
