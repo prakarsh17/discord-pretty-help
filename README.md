@@ -1,6 +1,6 @@
 
-# discord-pretty-help
-## Revised by prakarsh17
+# tessa-pretty-help
+## A fork of discord-pretty-help , Revised by prakarsh17
 
 An embed version of the built in help command for discord.py and probably other forks of discord.py ie Nextcord, Novus, pycord, etc.
 
@@ -8,7 +8,7 @@ Inspired by the DefaultHelpCommand that discord.py uses, but revised for embeds 
 
 ## Installation
 
-`pip install discord-pretty-help`
+`pip install tessa-pretty-help`
 
 ## Usage
 
