@@ -37,7 +37,7 @@ class Paginator:
         self.color = color
         self.char_limit = 6000
         self.field_limit = 25
-        self.prefix = "```"
+        self.prefix = "```md"
         self.suffix = "```"
         self.show_index = show_index
         self.clear()
@@ -204,7 +204,7 @@ class Paginator:
             for page_no, page in enumerate(self._pages, 1):
                 index.add_field(
                     name=f"{page_no}) {page.title}",
-                    value=f'{self.prefix}{page.description or "No Description"}{self.suffix}',
+                    value=f'{self.prefix}{page.description or "_ _"}{self.suffix}',
                     inline=False,
                 )
             index.set_footer(text=self.ending_note)

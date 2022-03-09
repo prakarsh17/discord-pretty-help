@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tessa-pretty-help", 
-    version="0.0.1",
+    version="0.0.1.2",
     author="Prakarsh17",
     author_email="pranjal.prakarsh@outlook.com",
     description="An embed version of the built in help command for discord.py and probably other forks of discord.py Inspired by the DefaultHelpCommand that discord.py uses, but revised for embeds and additional sorting on individual pages that can be scrolled through with reactions..",
     # long_description=long_description,
     long_description_content_type="text/markdown",
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
-    url="https://github.com/prakarsh17/discord-pretty-help",
+    url="https://github.com/prakarsh17/tessa-pretty-help",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
