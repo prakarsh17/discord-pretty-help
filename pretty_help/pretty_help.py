@@ -2,7 +2,7 @@ __all__ = ["PrettyHelp"]
 
 from random import randint
 from typing import List, Union
-
+import datetime
 import discord
 from discord.channel import _single_delete_strategy
 from discord.ext import commands
@@ -71,7 +71,7 @@ class Paginator:
         Returns:
             discord.Emebed: Returns an embed with the title and color set
         """
-        return discord.Embed(title=title, description=description, color=self.color)
+        return discord.Embed(title=title, description=description, color=self.color,timestamp=datetime.datetime.utc_now)
 
     def _add_page(self, page: discord.Embed):
         """
