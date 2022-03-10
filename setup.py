@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tessa-pretty-help", 
-    version="0.0.1.2",
+    version="0.0.2dev",
     author="Prakarsh17",
     author_email="pranjal.prakarsh@outlook.com",
     description="An embed version of the built in help command for discord.py and probably other forks of discord.py Inspired by the DefaultHelpCommand that discord.py uses, but revised for embeds and additional sorting on individual pages that can be scrolled through with reactions..",

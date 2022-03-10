@@ -1,2 +1,4 @@
+0.0.2dev
+New dev version
 0.0.1.2
 Name updates and some stuff
