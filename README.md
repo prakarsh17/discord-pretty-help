@@ -1,5 +1,6 @@
 
 # tessa-pretty-help
+[![PyPI version](https://badge.fury.io/py/tessa-pretty-help.svg)](https://badge.fury.io/py/tessa-pretty-help) ![python](https://img.shields.io/badge/python-3.6+-blue)
 ## A fork of discord-pretty-help , Revised by prakarsh17
 
 An embed version of the built in help command for discord.py and probably other forks of discord.py ie Nextcord, Novus, pycord, etc.
@@ -72,6 +73,8 @@ the arrow embeds. The message is unresponsive after 30s of no activity, it'll re
 
 
 # Notes:
+- Join our server and add your bot there using Tessarect (`a!addbot <id> <prefix>`) so your bot can use emojis 
+https://discord.gg/avpet3NjTE
 - discord.py must already be installed to use this
 - `manage-messages` permission is recommended so reactions can be removed automatically
 
